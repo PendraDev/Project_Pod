@@ -1,0 +1,25 @@
+.article-card {
+    height: 600px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    
+}
+.logo {
+    display: flex;
+    padding-left: 2.5rem;
+    padding-top: 5rem; 
+    padding: 5rem 2.5rem 0.5rem 2.5rem; 
+}
+.tags {
+    padding-left: 3.5rem;
+     
+}
+.purple-tag {
+    background-color: #DAD7FE;
+}
+.yellow-tag {
+    background-color: #FFF5CC;
+}
+.cyan-tag {
+    background-color: #C8F3F9;
+}
