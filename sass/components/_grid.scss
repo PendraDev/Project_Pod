@@ -25,18 +25,17 @@
         }
     
 }    
-.three {
-    border: solid 1px red;
+.three {    
     grid-column: 3/6;
     grid-row: 1/3;
 }
 .four {
-    border: solid 1px red;
+    border: solid 1px gray;
     grid-column: 3/6;
     grid-row: 3/5;
 }
 .five {
-    border: solid 1px red;
+    border: solid 1px gray;
     grid-column: 3/6;
     grid-row: 5/8;
 }
