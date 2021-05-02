@@ -21,54 +21,42 @@
                    <h1>THE NEW YORK TIMES</h1>
                 </div>
                 <div class="tags">
-                    <h2 class="purple-tag">Tulsa</h2>
-                    <h2 class="yellow-tag">Columbus</h2>
-                    <h2 class="cyan-tag">Bogotá</h2>
+                    <h3 class="purple-tag">Tulsa</h3>
+                    <h3 class="yellow-tag">Columbus</h3>
+                    <h3 class="cyan-tag">Bogotá</h3>
                 </div>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, asperiores quo hic sint, nobis in placeat ullam nemo voluptatem suscipit obcaecati corrupti eaque officia natus necessitatibus. Repellendus numquam adipisci atque!</p>
                 </div>
             </div>
        <div class="three"><iframe src="https://open.spotify.com/embed-podcast/episode/11XHbj0IgB3s9Pu0gKoQg3" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" ></iframe></div>
-       <div class="four"><code>View > Developer > JavaScript Console</code></div>
+       <div class="four">
+         <h2>Your Playlist</h2>
+          <div class="playlist-container">
+            <div>
+              <img class="img-list1" src="./assets/list1.PNG" alt="Ilustration: A man">
+                <h4>Feeling Artsy</h4>
+                <p>2 hours</p>
+            </div>
+            <div>
+              <img class="img-list2" src="./assets/list2.PNG" alt=" Ilustration: Woman dancing whit a mask">
+                <h4>Feel like Dancing</h4>
+                <p>35 min</p>
+            </div>
+            <div>
+              <img class="img-list3" src="./assets/list3.PNG" alt="Ilustration: Hamburgerman">
+                <h4>Somewhere Dark</h4>
+                <p>3 hours</p>
+            </div>
+          </div>
+        </div>
        <div class="five">Five</div>
        <div class="six">
-           <img src="./assets/banner-lat.png" alt="Banner lateral">
+           <img class="banner-lat" src="./assets/banner-lat.png" alt="Banner lateral">
        </div>
 
         </div>
     </div>
-   <script src="./js/index.js"></script>
-   <script src="https://sdk.scdn.co/spotify-player.js"></script>
-   <script>
-    window.onSpotifyWebPlaybackSDKReady = () => {
-      const token = '[BQCoD312SxVkfj1gwmTPNsMmNS1qO11TOqCHWUgPj6y2aYFueY7173d22Fyj9D3HeYYwxv0CgHOi-RBli1UDn-KCqZhXVVeN8ndJ_JVcmse-zHLRYrbhoQaRAewQVn4-2UdO9pCjpjBuNlyzIEQLqFRbWniO3nEm]';
-      const player = new Spotify.Player({
-        name: 'Web Playback SDK Quick Start Player',
-        getOAuthToken: cb => { cb(token); }
-      });
-
-      // Error handling
-      player.addListener('initialization_error', ({ message }) => { console.error(message); });
-      player.addListener('authentication_error', ({ message }) => { console.error(message); });
-      player.addListener('account_error', ({ message }) => { console.error(message); });
-      player.addListener('playback_error', ({ message }) => { console.error(message); });
-
-      // Playback status updates
-      player.addListener('player_state_changed', state => { console.log(state); });
-
-      // Ready
-      player.addListener('ready', ({ device_id }) => {
-        console.log('Ready with Device ID', device_id);
-      });
-
-      // Not Ready
-      player.addListener('not_ready', ({ device_id }) => {
-        console.log('Device ID has gone offline', device_id);
-      });
-
-      // Connect to the player!
-      player.connect();
-    };
-  </script>
+   <script src="./js/index.js"></script>   
+   
 </body>
 </html>
