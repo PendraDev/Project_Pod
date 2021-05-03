@@ -1,12 +1,13 @@
 h1 {
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.6rem;
     line-height: 50px;
 
 }
 h2 {
     margin: 1.5rem ;
-    font-size: 4rem;
-    
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
 }
 h3 {
     display: inline-block;
@@ -17,10 +18,13 @@ h3 {
     padding: 0 1rem;    
 }
 h4 {
-    font-size: 20px;
-    margin: 0 1.5rem;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    margin: 0 1.3rem;
+    letter-spacing: -1px;
 }
-p {
-    font-size: 1.2vw;
-    
+p {    
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;    
 }
